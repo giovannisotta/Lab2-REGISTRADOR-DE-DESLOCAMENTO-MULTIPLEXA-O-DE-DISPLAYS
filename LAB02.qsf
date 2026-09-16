@@ -155,5 +155,5 @@ set_location_assignment PIN_N19 -to HEX5[5]
 set_location_assignment PIN_N20 -to HEX5[6]
 
 # IO Standard - Schmitt Trigger para os Botoes
-set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to PB0
-set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to PB1
+set_instance_assignment -name IO_STANDARD "2.5 V SCHMITT TRIGGER" -to PB0
+set_instance_assignment -name IO_STANDARD "2,5 V SCHMITT TRIGGER" -to PB1
