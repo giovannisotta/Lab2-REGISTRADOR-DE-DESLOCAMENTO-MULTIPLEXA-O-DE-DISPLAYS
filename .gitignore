@@ -43,6 +43,7 @@ PLL_*/
 transcript
 #wave.do
 vsim.wlf
+*.vwf
 
 # Windows
 Thumbs.db
