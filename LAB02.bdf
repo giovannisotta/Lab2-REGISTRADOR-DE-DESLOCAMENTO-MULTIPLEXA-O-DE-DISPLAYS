@@ -71,7 +71,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 816 192 984 208)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "PB1" (rect 5 0 27 11)(font "Arial" ))
+	(text "PB1" (rect 5 0 26 11)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -202,7 +202,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 840 400 984 496)
+	(rect 832 400 976 496)
 	(text "7SEGDECODERBAR" (rect 5 0 117 15)(font "Intel Clear" (font_size 8)))
 	(text "inst5" (rect 8 79 32 92)(font "Intel Clear" ))
 	(port
@@ -533,17 +533,37 @@ refer to the applicable agreement for further details.
 		(circle (rect 31 12 39 20))
 	)
 )
-(connector
-	(text "HEX5[6..0]" (rect 984 320 1037 333)(font "Intel Clear" ))
-	(pt 984 336)
-	(pt 1000 336)
-	(bus)
-)
-(connector
-	(text "HEX4[6..0]" (rect 984 416 1037 429)(font "Intel Clear" ))
-	(pt 984 432)
-	(pt 1000 432)
-	(bus)
+(symbol
+	(rect 840 224 904 272)
+	(text "AND2" (rect 1 0 28 10)(font "Arial" (font_size 6)))
+	(text "inst13" (rect 3 37 34 50)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 22 18)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 22 18)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 22 34)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 22 34)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 68 26)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 68 26)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 37)(pt 31 37))
+		(line (pt 14 12)(pt 14 37))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
 )
 (connector
 	(text "HEX3[6..0]" (rect 984 512 1037 525)(font "Intel Clear" ))
@@ -582,10 +602,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 456 256)
-	(pt 664 256)
-)
-(connector
 	(text "REG5_OUT[3..0]" (rect 720 360 801 373)(font "Intel Clear" ))
 	(pt 720 376)
 	(pt 736 376)
@@ -616,11 +632,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "SINAL_HEX5[0]" (rect 808 224 885 237)(font "Intel Clear" ))
-	(pt 808 240)
-	(pt 832 240)
-)
-(connector
 	(pt 1056 88)
 	(pt 1056 104)
 	(bus)
@@ -629,12 +640,6 @@ refer to the applicable agreement for further details.
 	(text "HEX5_7SEG[3..0]" (rect 1200 120 1286 133)(font "Intel Clear" ))
 	(pt 1200 136)
 	(pt 1224 136)
-	(bus)
-)
-(connector
-	(text "HEX5_7SEG[3..0]" (rect 760 312 846 325)(font "Intel Clear" ))
-	(pt 800 336)
-	(pt 840 336)
 	(bus)
 )
 (connector
@@ -659,19 +664,13 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "HEX4_7SEG[3..0]" (rect 720 464 806 477)(font "Intel Clear" ))
-	(pt 840 432)
-	(pt 832 432)
-	(bus)
-)
-(connector
 	(text "SINAL_HEX5[3..1]" (rect 954 80 1043 93)(font "Intel Clear" ))
 	(pt 1056 104)
 	(pt 984 104)
 	(bus)
 )
 (connector
-	(text "REG2_OUT[3..0]" (rect 1040 312 1121 325)(font "Intel Clear" ))
+	(text "REG2_OUT[3..0]" (rect 984 352 1065 365)(font "Intel Clear" ))
 	(pt 1056 336)
 	(pt 1040 336)
 	(bus)
@@ -694,13 +693,7 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "REG1_OUT[3..0]" (rect 720 424 801 437)(font "Intel Clear" ))
-	(pt 720 440)
-	(pt 760 440)
-	(bus)
-)
-(connector
-	(text "REG1_OUT[3..0]" (rect 1040 416 1121 429)(font "Intel Clear" ))
+	(text "REG1_OUT[3..0]" (rect 992 392 1073 405)(font "Intel Clear" ))
 	(pt 1056 432)
 	(pt 1040 432)
 	(bus)
@@ -759,4 +752,52 @@ refer to the applicable agreement for further details.
 	(pt 984 200)
 	(pt 1056 200)
 )
+(connector
+	(pt 808 240)
+	(pt 840 240)
+)
+(connector
+	(pt 456 256)
+	(pt 664 256)
+)
+(connector
+	(pt 664 256)
+	(pt 840 256)
+)
+(connector
+	(text "SINAL_HEX5[0]" (rect 904 232 981 245)(font "Intel Clear" ))
+	(pt 904 248)
+	(pt 920 248)
+)
+(connector
+	(text "HEX5[6..0]" (rect 984 320 1037 333)(font "Intel Clear" ))
+	(pt 984 336)
+	(pt 1000 336)
+	(bus)
+)
+(connector
+	(text "HEX5_7SEG[3..0]" (rect 760 312 846 325)(font "Intel Clear" ))
+	(pt 800 336)
+	(pt 840 336)
+	(bus)
+)
+(connector
+	(text "HEX4[6..0]" (rect 976 416 1029 429)(font "Intel Clear" ))
+	(pt 976 432)
+	(pt 992 432)
+	(bus)
+)
+(connector
+	(text "HEX4_7SEG[3..0]" (rect 568 512 654 525)(font "Intel Clear" ))
+	(pt 832 432)
+	(pt 816 432)
+	(bus)
+)
+(connector
+	(text "REG1_OUT[3..0]" (rect 720 424 801 437)(font "Intel Clear" ))
+	(pt 720 440)
+	(pt 744 440)
+	(bus)
+)
 (junction (pt 1056 200))
+(junction (pt 664 256))
